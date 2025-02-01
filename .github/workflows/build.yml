@@ -69,9 +69,15 @@ jobs:
 
       - name: Build binary for ${{ matrix.arch }}
         run: |
-          export GOARCH=${{ matrix.arch }}
-          go mod tidy
-          go build -v -buildmode=c-archive -o ${{ env.name }}-${{ matrix.os }}-${{ matrix.arch }}.a .
+          if [ ${{ runner.os }} != 'Windows' ]; then
+            export GOARCH=${{ matrix.arch }}
+            go mod tidy
+            go build -v -buildmode=c-archive -o ${{ env.name }}-${{ matrix.os }}-${{ matrix.arch }}.a .
+          else
+            set GOARCH=${{ matrix.arch }}
+            go mod tidy
+            go build -v -buildmode=c-archive -o ${{ env.name }}-${{ matrix.os }}-${{ matrix.arch }}.a .
+          fi
 
       - name: Move binaries to dist (Linux/macOS)
         run: |
