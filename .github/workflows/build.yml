@@ -36,7 +36,7 @@ jobs:
       - name: Build binary
         run: |
           go mod tidy
-          go build -v -o -buildmode=c-archive ${{ env.name }}-${{ matrix.os }}.a .
+          go build -v -buildmode=c-archive -o ${{ env.name }}-${{ matrix.os }}.a .
         
 
       - name: Move binaries to dist (Linux/macOS)
