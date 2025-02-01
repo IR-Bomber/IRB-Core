@@ -5,7 +5,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/M-logique/Iran-Bomber-Core/utils"
+	"github.com/IR-Bomber/IRB-Core/utils"
 )
 
 
