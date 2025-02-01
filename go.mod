@@ -1,3 +1,3 @@
-module github.com/M-logique/Iran-Bomber-Core
+module github.com/IR-Bomber/IRB-Core
 
 go 1.22.10

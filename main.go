@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/M-logique/Iran-Bomber-Core/bomber"
-	"github.com/M-logique/Iran-Bomber-Core/utils"
+	"github.com/IR-Bomber/IRB-Core/bomber"
+	"github.com/IR-Bomber/IRB-Core/utils"
 )
 
 

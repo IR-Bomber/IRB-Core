@@ -10,7 +10,7 @@ import (
 	"net/url"
 	"time"
 
-	"github.com/M-logique/Iran-Bomber-Core/utils"
+	"github.com/IR-Bomber/IRB-Core/utils"
 )
 
 type Bomber struct {
