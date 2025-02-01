@@ -1,66 +1,20 @@
 package main
 
 import (
-	"encoding/json"
 	"fmt"
-	"net/http"
-	"os"
 	"sync"
 
 	"github.com/M-logique/Iran-Bomber-Core/bomber"
 	"github.com/M-logique/Iran-Bomber-Core/utils"
 )
 
-const (
-	APIURL = "https://m-logique.github.io/files/API.json"
-)
 
-func fetchAPI() (error, []interface{}) {
-	resp, err := http.Get(APIURL)
-	if err != nil {
-		return err, nil
-	}
-
-	defer resp.Body.Close()
-
-	var result map[string]interface{}
-	if err = json.NewDecoder(resp.Body).Decode(&result); err != nil {
-		return err, nil
-	}
-
-	// Check if the "APIs" field is in the correct format
-	apis, ok := result["APIs"].([]interface{})
-	if !ok {
-		return fmt.Errorf("Expected 'APIs' to be an array, but got %T", result["APIs"]), nil
-	}
-
-	return nil, apis
-}
-
-func loadAPI(filePath string) (error, []interface{}) {
-	fi, err := os.Open(filePath)
-
-	if err != nil {
-		return err, nil
-	}
-
-	defer fi.Close()
-
-	var result map[string]interface{}
-
-	if err = json.NewDecoder(fi).Decode(&result); err != nil {
-		return err, nil
-	}
-
-	return nil, result["APIs"].([]interface{})
-
-}
 
 func sendAllMessages(phoneNumber string) {
 	fmt.Println("Sending SMS")
 
 	// err, result := fetchAPI()
-	err, result := loadAPI("API.json")
+	err, result := utils.FetchAPI()
 
 
 
@@ -130,15 +84,6 @@ func sendAllMessages(phoneNumber string) {
 		fmt.Println("Messages sent: ", successCount)
 		fmt.Println("Messages failed: ", errCount)
 
-}
-
-func contains(slice []string, item string) bool {
-	for _, v := range slice {
-		if v == item {
-			return true
-		}
-	}
-	return false
 }
 
 func main() {}

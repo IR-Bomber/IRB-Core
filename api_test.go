@@ -12,7 +12,7 @@ import (
 // TestAPI tests the fetchAPI function and validates the API structure
 func TestAPI(t *testing.T) {
 	// Fetch the data from the API
-	err, result := fetchAPI()
+	err, result := utils.FetchAPI()
 	if err != nil {
 		t.Errorf("Error with API: %v", err)
 		return
