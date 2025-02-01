@@ -62,5 +62,5 @@ jobs:
       - name: Upload Binary artifacts
         uses: actions/upload-artifact@v4
         with:
-          name: ${{ env.name }}-binaries
+          name: ${{ env.name }}-${{matrix.os}}-binaries
           path: dist/
