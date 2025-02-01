@@ -40,11 +40,15 @@ jobs:
         
 
       - name: Move binaries to dist (Linux/macOS)
-        run: mv ${{ env.name }}-${{ matrix.os }}.a dist/
+        run: |
+          mkdir -p dist/
+          mv ${{ env.name }}-${{ matrix.os }}.* dist/
         if: runner.os != 'Windows'
 
       - name: Move binaries to dist (Windows)
-        run: move ${{ env.name }}-${{ matrix.os }}.a dist\
+        run: |
+          mkdir dist
+          move ${{ env.name }}-${{ matrix.os }}.* dist\
         if: runner.os == 'Windows'
 
       - name: List output files (Linux/macOS)
