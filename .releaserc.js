@@ -12,7 +12,7 @@ module.exports = {
     { name: "alpha", prerelease: "alpha" }
   ],
   plugins: [
-    "./.github/calver-plugin",
+    // ["./.github/calver-plugin"],
     [
       "@semantic-release/commit-analyzer",
       {
