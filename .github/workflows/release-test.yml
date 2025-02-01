@@ -1,0 +1,13 @@
+name: Release Test
+
+on: 
+  workflow_dispatch:
+
+jobs:
+  release:
+    name: Release Project
+    uses: ./.github/workflows/release.yml
+    secrets: inherit
+    permissions: write-all
+    with:
+      dry-run: true

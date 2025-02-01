@@ -1,33 +1,17 @@
-name: "Release"
-
+name: Release
 
 on:
-  workflow_dispatch: 
-    
-permissions:
-  contents: write
-  issues: write
-  pull-requests: write
+  workflow_call:
+    inputs:
+      dry-run:
+        type: boolean
+        default: true
+        required: false
 
 jobs:
-
-  test:
-    name: Run Tests
-    uses: ./.github/workflows/test.yml
-    secrets: inherit
-    permissions: write-all
-
-  build:
-    name: Build Project
-    uses: ./.github/workflows/build.yml
-    secrets: inherit
-    permissions: write-all
-    needs: test
-
   release:
     name: Release Project
     runs-on: ubuntu-latest
-    needs: build
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
@@ -48,20 +32,30 @@ jobs:
             @semantic-release/gitlab \
             @semantic-release/npm \
             @semantic-release/release-notes-generator \
-            conventional-changelog-conventionalcommits
+            conventional-changelog-conventionalcommits \
+            @mrbernnz/semantic-release-calver
 
       - name: Download Go Binaries
         uses: actions/download-artifact@v4
         with:
           path: dist/
-
-      - name: Move APK files to root of dist
+        if: !inputs.dry-run
+        
+      - name: Move Binary files to root of dist
         run: |
           find dist -mindepth 2 -type f -exec mv -t dist {} +
           find dist -mindepth 1 -type d -exec rm -r {} +
-  
+        if: !inputs.dry-run
+
+
       - name: Run semantic-release
-        run: | 
-          npx semantic-release 
+        run: |
+          if [ "${{ inputs.dry-run }}" == true ]; then
+            echo "Running in dry-run mode"
+            npx semantic-release --dry-run
+          else
+            echo "Running semantic-release normally"
+            npx semantic-release
+          fi
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
