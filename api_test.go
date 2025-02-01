@@ -5,7 +5,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/IR-Bomber/IRB-Core/utils"
+	"github.com/IR-Bomber/IRB-Go/utils"
 )
 
 

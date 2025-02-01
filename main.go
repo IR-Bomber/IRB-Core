@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/IR-Bomber/IRB-Core/bomber"
-	"github.com/IR-Bomber/IRB-Core/utils"
+	"github.com/IR-Bomber/IRB-Go/bomber"
+	"github.com/IR-Bomber/IRB-Go/utils"
 )
 
 
