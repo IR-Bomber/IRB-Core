@@ -1,0 +1,62 @@
+name: Build
+
+on: 
+  workflow_call:
+
+
+env:
+  name: "Iran-Bomber-Core"
+
+jobs: 
+  build:
+    name: Build Go binaries
+    runs-on: ${{ matrix.os }}
+
+    permissions:
+      contents: read  # Minimal required permissions
+
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+        go-version: [1.22]
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: ${{ matrix.go-version }}
+
+      - name: Verify Go installation
+        run: go version
+
+      - name: Build binary
+        run: |
+          go mod tidy
+          go build -v -o -buildmode=c-archive ${{ env.name }}-${{ matrix.os }}.a .
+        
+
+      - name: Move binaries to dist (Linux/macOS)
+        run: mv ${{ env.name }}-${{ matrix.os }}.a dist/
+        if: runner.os != 'Windows'
+
+      - name: Move binaries to dist (Windows)
+        run: move ${{ env.name }}-${{ matrix.os }}.a dist\
+        if: runner.os == 'Windows'
+
+      - name: List output files (Linux/macOS)
+        run: ls -lah dist/
+        if: runner.os != 'Windows'
+
+      - name: List output files (Windows)
+        run: dir dist\
+        if: runner.os == 'Windows'
+
+      - name: Upload Binary artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ env.name }}-binaries
+          path: dist/
