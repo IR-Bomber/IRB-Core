@@ -33,11 +33,22 @@ jobs:
       - name: Verify Go installation
         run: go version
 
-      - name: Run Go tests
+      - name: Run Go tests (Linux/MacOS)
         run: |
-          GOARCH=${{ matrix.arch }} go mod tidy
-          GOARCH=${{ matrix.arch }} go test ./... -v 
+          export GOARCH=${{ matrix.arch }}
+          go mod tidy
+          go test ./... -v 
         continue-on-error: false  # Make sure the job fails if tests fail
+        if: runner.os != 'Windows'
+
+      - name: Run Go tests (Windows)
+        run: |
+          set GOARCH=${{ matrix.arch }}
+          go mod tidy
+          go test ./... -v
+        if: runner.os == 'Windows'
+
+
     
   build:
     needs: test
@@ -55,6 +66,7 @@ jobs:
         arch: [amd64, arm64]  # Add support for multiple architectures
 
     steps:
+      
       - name: Checkout repository
         uses: actions/checkout@v4
 
@@ -66,10 +78,18 @@ jobs:
       - name: Verify Go installation
         run: go version
 
+      - name: Build binary for ${{ matrix.arch }} (Linux/MacOS)
+        run: |
+          export GOARCH=${{ matrix.arch }} 
+          go mod tidy
+          go build -v -buildmode=c-archive -o ${{ env.name }}-${{ matrix.os }}-${{ matrix.arch }}.a .
+        if: runner.os != 'Windows'
+      
       - name: Build binary for ${{ matrix.arch }}
         run: |
-          GOARCH=${{ matrix.arch }} go mod tidy
-          GOARCH=${{ matrix.arch }} go build -v -buildmode=c-archive -o ${{ env.name }}-${{ matrix.os }}-${{ matrix.arch }}.a .
+          set GOARCH=${{ matrix.arch }} 
+          go mod tidy
+          go build -v -buildmode=c-archive -o ${{ env.name }}-${{ matrix.os }}-${{ matrix.arch }}.a .
 
 
       - name: Move binaries to dist (Linux/macOS)
