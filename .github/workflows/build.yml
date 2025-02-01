@@ -5,9 +5,39 @@ on:
 
 
 env:
-  name: "Iran-Bomber-Core"
+  name: "IBCore"
 
 jobs: 
+  test:
+    name: Run Go Tests
+    runs-on: ${{ matrix.os }}
+
+    permissions:
+      contents: read  # Minimal required permissions
+
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+        go-version: [1.22]
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: ${{ matrix.go-version }}
+
+      - name: Verify Go installation
+        run: go version
+
+      - name: Run Go tests
+        run: |
+          go mod tidy
+          go test ./... -v  # Run tests before building
+        continue-on-error: false  # Make sure the job fails if tests fail
+    
   build:
     name: Build Go binaries
     runs-on: ${{ matrix.os }}

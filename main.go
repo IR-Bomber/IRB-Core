@@ -28,7 +28,13 @@ func fetchAPI() (error, []interface{}) {
 		return err, nil
 	}
 
-	return nil, result["APIs"].([]interface{})
+	// Check if the "APIs" field is in the correct format
+	apis, ok := result["APIs"].([]interface{})
+	if !ok {
+		return fmt.Errorf("Expected 'APIs' to be an array, but got %T", result["APIs"]), nil
+	}
+
+	return nil, apis
 }
 
 func loadAPI(filePath string) (error, []interface{}) {
