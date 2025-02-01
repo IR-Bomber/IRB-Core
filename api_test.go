@@ -8,8 +8,7 @@ import (
 	"github.com/M-logique/Iran-Bomber-Core/utils"
 )
 
-// TestAPI tests the fetchAPI function and validates the API structure
-// TestAPI tests the fetchAPI function and validates the API structure
+
 // TestAPI tests the fetchAPI function and validates the API structure
 func TestAPI(t *testing.T) {
 	// Fetch the data from the API
