@@ -37,10 +37,18 @@ jobs:
         uses: docker/setup-docker-action@v4
         if: runner.os != 'Windows'
 
-      - name: Run Go tests (Linux/MacOS) inside Docker
+      - name: Run Go tests (Linux) inside Docker
         run: |
           docker run --rm -v $PWD:/go/src/github.com/M-logique/Iran-Bomber-Core -w /go/src/github.com/M-logique/Iran-Bomber-Core golang:1.22 bash -c "GOARCH=${{ matrix.arch }} go mod tidy && go test ./... -v"
-        if: runner.os != 'Windows'
+        if: runner.os == 'Linux'
+
+      - name: Run Go tests (MacOS)
+        run: |
+          export GOARCH=${{ matrix.arch }}
+          go mod tidy
+          go test ./... -v
+        if: runner.os == 'macOS'
+
 
       - name: Run Go tests (Windows)
         run: |
