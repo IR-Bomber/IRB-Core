@@ -17,7 +17,7 @@ module.exports = {
         preset: "conventionalcommits",
         releaseRules: [
           { type: "fix", release: "patch" },
-          { type: "feat", release: "minor" },
+          { type: "feat", release: "patch" },
           { type: "hotfix", release: "patch" },
           { type: "refactor", release: "patch" },
           { type: "style", release: "patch" },
@@ -104,9 +104,10 @@ module.exports = {
     [
       "@semantic-release/git",
       {
-        assets: ["CHANGELOG.md", "pubspec.yaml"],
-        message: "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}",
+        assets: ["CHANGELOG.md"],
+        message: "chore(release): ${nextRelease.version}\n\n${nextRelease.notes}",
       },
     ],
+    "./.github/calver-plugin"
   ],
 };

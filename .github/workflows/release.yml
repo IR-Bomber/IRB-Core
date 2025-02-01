@@ -4,12 +4,58 @@ on:
   workflow_dispatch: 
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
 
+  test:
+    name: Run Tests
+    uses: ./.github/workflows/test.yml
+    secrets: inherit
+    permissions: write-all
+
+  build:
+    name: Build Project
+    uses: ./.github/workflows/build.yml
+    secrets: inherit
+    permissions: write-all
+    needs: test
+
+  release:
+    name: Release Project
+    runs-on: ubuntu-latest
+    needs: build
     steps:
-      - name: Checkout repository
+      - name: Checkout Code
         uses: actions/checkout@v4
 
-    
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '22'
 
+      - name: Install semantic-release dependencies
+        run: |
+          npm install --save-dev \
+            semantic-release \
+            @semantic-release/changelog \
+            @semantic-release/git \
+            @semantic-release/github \
+            @semantic-release/exec \
+            @semantic-release/gitlab \
+            @semantic-release/npm \
+            @semantic-release/release-notes-generator \
+            conventional-changelog-conventionalcommits
+
+      - name: Download Go Binaries
+        uses: actions/download-artifact@v4
+        with:
+          path: dist/
+
+      - name: Move APK files to root of dist
+        run: |
+          find dist -mindepth 2 -type f -exec mv -t dist {} +
+          find dist -mindepth 1 -type d -exec rm -r {} +
+  
+      - name: Run semantic-release
+        run: | 
+          npx semantic-release 
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
