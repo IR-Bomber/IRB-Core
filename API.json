@@ -1,0 +1,1572 @@
+{
+    "APIs": [
+        {
+            "name": "Snapp",
+            "method": "POST",
+            "url": "https://app.snapp.taxi/api/api-passenger-oauth/v2/otp",
+            "payload": {
+                "cellphone": "+98%s"
+            },
+            "data": null
+        },
+        {
+            "name": "drnext",
+            "method": "POST",
+            "url": "https://cyclops.drnext.ir/v1/patients/auth/send-verification-token",
+            "payload": {
+                "source": "besina",
+                "mobile": "0%s"
+            },
+            "data": null
+        },
+        {
+            "name": "tapsi",
+            "method": "POST",
+            "url": "https://tap33.me/api/v2/user",
+            "payload": {
+                "credential": {
+                    "phoneNumber": "0%s",
+                    "role": "PASSENGER"
+                }
+            },
+            "data": null
+        },
+        {
+            "name": "alibaba",
+            "method": "POST",
+            "url": "https://ws.alibaba.ir/api/v3/account/mobile/otp",
+            "payload": {
+                "phoneNumber": "0%s"
+            },
+            "data": null
+        },
+        {
+            "name": "torob",
+            "method": "GET",
+            "url": "https://api.torob.com/a/phone/send-pin/?phone_number=0%s'",
+            "payload": null,
+            "data": null
+        },
+        {
+            "name": "snappmarket",
+            "method": "POST",
+            "url": "https://api.snapp.market/mart/v1/user/loginMobileWithNoPass?cellphone=0%s",
+            "payload": null,
+            "data": null
+        },
+        {
+            "name": "Balad",
+            "method": "POST",
+            "url": "https://account.api.balad.ir/api/web/auth/login/",
+            "payload": {
+                "phone_number": "0%s",
+                "os_type": "W"
+            },
+            "data": null
+        },
+        {
+            "name": "miareh",
+            "method": "GET",
+            "url": "https://www.miare.ir/p/restaurant/#/login?phone=0%s'",
+            "payload": null,
+            "data": null
+        },
+        {
+            "name": "ostadkar",
+            "method": "POST",
+            "url": "https://api.ostadkr.com/login",
+            "payload": {
+                "mobile": "f'0%s"
+            },
+            "data": null
+        },
+        {
+            "name": "behtarino",
+            "method": "POST",
+            "url": "https://bck.behtarino.com/api/v1/users/jwt_phone_verification/",
+            "payload": {
+                "phone": "0%s"
+            },
+            "data": null
+        },
+        {
+            "name": "bit24",
+            "method": "POST",
+            "url": "https://bit24.cash/auth/bit24/api/v3/auth/check-mobile",
+            "payload": {
+                "mobile": "0%s",
+                "contry_code": "98"
+            },
+            "data": null
+        },
+        {
+            "name": "drdr",
+            "method": "POST",
+            "url": "https://drdr.ir/api/v3/auth/login/mobile/init",
+            "payload": {
+                "mobile": "%s"
+            },
+            "data": null
+        },
+        {
+            "name": "drto",
+            "method": "POST",
+            "url": "https://api.doctoreto.com/api/web/patient/v1/accounts/register",
+            "payload": {
+                "mobile": "%s",
+                "captcha": "",
+                "country_id": 205
+            },
+            "data": null
+        },
+        {
+            "name": "okala",
+            "method": "POST",
+            "url": "https://api-react.okala.com/C/CustomerAccount/OTPRegister",
+            "payload": {
+                "mobile": "0%s",
+                "deviceTypeCode": 0,
+                "confirmTerms": "True",
+                "notRobot": "False"
+            },
+            "data": null
+        },
+        {
+            "name": "banimod",
+            "method": "POST",
+            "url": "https://mobapi.banimode.com/api/v2/auth/request",
+            "payload": {
+                "phone": "0%s"
+            },
+            "data": null
+        },
+        {
+            "name": "beroozmarket",
+            "method": "POST",
+            "url": "https://api.beroozmart.com/api/pub/account/send-otp",
+            "payload": {
+                "mobile": "0%s",
+                "sendViaSms": "True",
+                "email": "null",
+                "sendViaEmail": "False"
+            },
+            "data": null
+        },
+        {
+            "name": "itoll",
+            "method": "POST",
+            "url": "https://app.itoll.com/api/v1/auth/login",
+            "payload": {
+                "mobile": "0%s"
+            },
+            "data": null
+        },
+        {
+            "name": "gap",
+            "method": "GET",
+            "url": "https://core.gap.im/v1/user/add.json?mobile=+98%s",
+            "payload": null,
+            "data": null
+        },
+        {
+            "name": "pinket",
+            "method": "POST",
+            "url": "https://pinket.com/api/cu/v2/phone-verification",
+            "payload": {
+                "phoneNumber": "0%s"
+            },
+            "data": null
+        },
+        {
+            "name": "football360",
+            "method": "POST",
+            "url": "https://football360.ir/api/auth/verify-phone/",
+            "payload": {
+                "phone_number": "+98%s"
+            },
+            "data": null
+        },
+        {
+            "name": "pinorest",
+            "method": "POST",
+            "url": "https://api.pinorest.com/frontend/auth/login/mobile",
+            "payload": {
+                "mobile": "%s"
+            },
+            "data": null
+        },
+        {
+            "name": "mrbilit",
+            "method": "GET",
+            "url": "https://auth.mrbilit.com/api/login/exists/v2?mobileOrEmail=0%s&source=2&sendTokenIfNot=true",
+            "payload": null,
+            "data": null
+        },
+        {
+            "name": "hamrahmechanich",
+            "method": "POST",
+            "url": "https://www.hamrah-mechanic.com/api/v1/membership/otp",
+            "payload": {
+                "PhoneNumber": "0%s",
+                "prevDomainUrl": "https://www.google.com/",
+                "landingPageUrl": "https://www.hamrah-mechanic.com/cars-for-sale/",
+                "orderPageUrl": "https://www.hamrah-mechanic.com/membersignin/",
+                "prevUrl": "https://www.hamrah-mechanic.com/cars-for-sale/",
+                "referrer": "https://www.google.com/"
+            },
+            "data": null
+        },
+        {
+            "name": "lendo",
+            "method": "POST",
+            "url": "https://api.lendo.ir/api/customer/auth/send-otp",
+            "payload": {
+                "mobile": "0%s"
+            },
+            "data": null
+        },
+        {
+            "name": "taghche",
+            "method": "POST",
+            "url": "https://gw.taaghche.com/v4/site/auth/login",
+            "payload": {
+                "contact": "0%s",
+                "forceOtp": "False"
+            },
+            "data": null
+        },
+        {
+            "name": "khodro45",
+            "method": "POST",
+            "url": "https://khodro45.com/api/v1/customers/otp/s",
+            "payload": {
+                "mobile": "0%s"
+            },
+            "data": null
+        },
+        {
+            "name": "pateh",
+            "method": "POST",
+            "url": "https://api.pateh.com/api/v1/LoginOrRegister",
+            "payload": {
+                "mobile": "    0%s"
+            },
+            "data": null
+        },
+        {
+            "name": "ketabchi",
+            "method": "POST",
+            "url": "https://ketabchi.com/api/v1/auth/requestVerificationCode",
+            "payload": {
+                "auth": {
+                    "phoneNumber": "0%s"
+                }
+            },
+            "data": null
+        },
+        {
+            "name": "reyanertebet",
+            "method": "POST",
+            "url": "https://pay.rayanertebat.ir/api/User/Otp?t=1692088339811",
+            "payload": {
+                "mobileNo": "0%s"
+            },
+            "data": null
+        },
+        {
+            "name": "pindo",
+            "method": "POST",
+            "url": "https://api.pindo.ir/v1/user/login-register/",
+            "payload": {
+                "phone": "0%s"
+            },
+            "data": null
+        },
+        {
+            "name": "delino",
+            "method": "POST",
+            "url": "https://www.delino.com/user/register",
+            "payload": {
+                "mobile": "0%s"
+            },
+            "data": null
+        },
+        {
+            "name": "zoodex",
+            "method": "POST",
+            "url": "https://admin.zoodex.ir/api/v1/login/check",
+            "payload": {
+                "mobile": "0%s"
+            },
+            "data": null
+        },
+        {
+            "name": "kukala",
+            "method": "POST",
+            "url": "https://api.kukala.ir/api/user/Otp",
+            "payload": {
+                "phoneNumber": "0%s"
+            },
+            "data": null
+        },
+        {
+            "name": "baskol",
+            "method": "POST",
+            "url": "https://www.buskool.com/send_verification_code",
+            "payload": {
+                "phone": "0%s"
+            },
+            "data": null
+        },
+        {
+            "name": "threetex",
+            "method": "POST",
+            "url": "https://3tex.io/api/1/users/validation/mobile",
+            "payload": {
+                "receptorPhone": "0%s"
+            },
+            "data": null
+        },
+        {
+            "name": "deniizshop",
+            "method": "POST",
+            "url": "https://deniizshop.com/api/v1/sessions/login_request",
+            "payload": {
+                "mobile_number": "0%s"
+            },
+            "data": null
+        },
+        {
+            "name": "flightio",
+            "method": "POST",
+            "url": "https://flightio.com/bff/Authentication/CheckUserKey",
+            "payload": {
+                "userKey": "0%s"
+            },
+            "data": null
+        },
+        {
+            "name": "abantether",
+            "method": "POST",
+            "url": "https://abantether.com/users/register/phone/send/",
+            "payload": {
+                "phoneNumber": "0%s"
+            },
+            "data": null
+        },
+        {
+            "name": "pooleno",
+            "method": "POST",
+            "url": "https://api.pooleno.ir/v1/auth/check-mobile",
+            "payload": {
+                "mobile": "0%s"
+            },
+            "data": null
+        },
+        {
+            "name": "wideapp",
+            "method": "POST",
+            "url": "https://agent.wide-app.ir/auth/token",
+            "payload": {
+                "grant_type": "otp",
+                "client_id": "62b30c4af53e3b0cf100a4a0",
+                "phone": "0%s"
+            },
+            "data": null
+        },
+        {
+            "name": "iranlms",
+            "method": "POST",
+            "url": "https://messengerg2c4.iranlms.ir/",
+            "payload": {
+                "se": "0%s"
+            },
+            "data": null
+        },
+        {
+            "name": "classino",
+            "method": "POST",
+            "url": "https://nx.classino.com/otp/v1/api/login",
+            "payload": {
+                "mobile": "0%s"
+            },
+            "data": null
+        },
+        {
+            "name": "snappfood",
+            "method": "POST",
+            "url": "https://snappfood.ir/mobile/v2/user/loginMobileWithNoPass?lat=35.774&long=51.418&sms_apialClient=WEBSITE&client=WEBSITE&deviceType=WEBSITE&appVersion=8.1.0&UDID=39c62f64-3d2d-4954-9033-816098559ae4&locale=fa",
+            "payload": {
+                "cellphone": "0%s"
+            },
+            "data": null
+        },
+        {
+            "name": "bitbarg",
+            "method": "POST",
+            "url": "https://api.bitbarg.com/api/v1/authentication/registerOrLogin",
+            "payload": {
+                "phone": "0%s"
+            },
+            "data": null
+        },
+        {
+            "name": "bahramshop",
+            "method": "POST",
+            "url": "https://api.bahramshop.ir/api/user/validate/username",
+            "payload": {
+                "username": "0%s"
+            },
+            "data": null
+        },
+        {
+            "name": "chamedon",
+            "method": "POST",
+            "url": "https://chamedoon.com/api/v1/membership/guest/request_mobile_verification",
+            "payload": {
+                "mobile": "0%s"
+            },
+            "data": null
+        },
+        {
+            "name": "kilid",
+            "method": "POST",
+            "url": "https://server.kilid.com/global_auth_api/v1.0/authenticate/login/realm/otp/start?realm=PORTAL",
+            "payload": {
+                "mobile": "0%s"
+            },
+            "data": null
+        },
+        {
+            "name": "otaghak",
+            "method": "POST",
+            "url": "https://core.otaghak.com/odata/Otaghak/Users/SendVerificationCode",
+            "payload": {
+                "userName": "0%s"
+            },
+            "data": null
+        },
+        {
+            "name": "shab",
+            "method": "POST",
+            "url": "https://www.shab.ir/api/fa/sandbox/v_1_4/auth/enter-mobile",
+            "payload": {
+                "mobile": "0%s"
+            },
+            "data": null
+        },
+        {
+            "name": "raybit",
+            "method": "POST",
+            "url": "https://api.raybit.net:3111/api/v1/authentication/register/mobile",
+            "payload": {
+                "mobile": "0%s"
+            },
+            "data": null
+        },
+        {
+            "name": "farvi",
+            "method": "POST",
+            "url": "https://farvi.shop/api/v1/sessions/login_request",
+            "payload": {
+                "mobile_phone": "0%s"
+            },
+            "data": null
+        },
+        {
+            "name": "namava",
+            "method": "POST",
+            "url": "https://www.namava.ir/api/v1.0/accounts/registrations/by-phone/request",
+            "payload": {
+                "UserName": "0%s"
+            },
+            "data": null
+        },
+        {
+            "name": "a4baz",
+            "method": "POST",
+            "url": "https://a4baz.com/api/web/login",
+            "payload": {
+                "cellphone": "0%s"
+            },
+            "data": null
+        },
+        {
+            "name": "anargift",
+            "method": "POST",
+            "url": "https://api.anargift.com/api/people/auth",
+            "payload": {
+                "user": "0%s"
+            },
+            "data": null
+        },
+        {
+            "name": "nobat",
+            "method": "POST",
+            "url": "https://nobat.ir/api/public/patient/login/phone",
+            "payload": {
+                "mobile": "0%s"
+            },
+            "data": null
+        },
+        {
+            "name": "ayantech",
+            "method": "POST",
+            "url": "https://application2.billingsystem.ayantech.ir/WebServices/Core.svc/requestActivationCode",
+            "payload": {
+                "Parametrs": {
+                    "ApplicationType": "Web",
+                    "ApplicationUniqueToken": null,
+                    "ApplicationVersion": "1.0.0",
+                    "MobileNumber": "0%s"
+                }
+            },
+            "data": null
+        },
+        {
+            "name": "simkhan",
+            "method": "POST",
+            "url": "https://www.simkhanapi.ir/api/users/registerV2",
+            "payload": {
+                "mobileNumber": "0%s"
+            },
+            "data": null
+        },
+        {
+            "name": "sibirani",
+            "method": "POST",
+            "url": "https://sandbox.sibirani.ir/api/v1/user/invite",
+            "payload": {
+                "username": "0%s"
+            },
+            "data": null
+        },
+        {
+            "name": "hyperjan",
+            "method": "POST",
+            "url": "https://shop.hyperjan.ir/api/users/manage",
+            "payload": {
+                "mobile": "0%s"
+            },
+            "data": null
+        },
+        {
+            "name": "digikala",
+            "method": "POST",
+            "url": "https://api.digikala.com/v1/user/authenticate/",
+            "payload": {
+                "username": "0%s"
+            },
+            "data": null
+        },
+        {
+            "name": "hiword",
+            "method": "POST",
+            "url": "https://hiword.ir/wp-json/otp-login/v1/login",
+            "payload": {
+                "identifier": "0%s"
+            },
+            "data": null
+        },
+        {
+            "name": "tikban",
+            "method": "POST",
+            "url": "https://tikban.com/Account/LoginAndRegister",
+            "payload": {
+                "cellPhone": "0%s"
+            },
+            "data": null
+        },
+        {
+            "name": "dicardo",
+            "method": "POST",
+            "url": "https://dicardo.com/main/sendsms",
+            "payload": {
+                "phone": "0%s"
+            },
+            "data": null
+        },
+        {
+            "name": "digistyle",
+            "method": "POST",
+            "url": "https://www.digistyle.com/users/login-register/",
+            "payload": {
+                "loginRegister[email_phone]": "0%s"
+            },
+            "data": null
+        },
+        {
+            "name": "banankala",
+            "method": "POST",
+            "url": "https://banankala.com/home/login",
+            "payload": {
+                "Mobile": "0%s"
+            },
+            "data": null
+        },
+        {
+            "name": "offdecor",
+            "method": "POST",
+            "url": "https://www.offdecor.com/index.php?route=account/login/sendCode",
+            "payload": {
+                "phone": "0%s"
+            },
+            "data": null
+        },
+        {
+            "name": "exo",
+            "method": "POST",
+            "url": "https://exo.ir/index.php?route=account/mobile_login",
+            "payload": {
+                "mobile_number": "0%s"
+            },
+            "data": null
+        },
+        {
+            "name": "shahrefarsh",
+            "method": "POST",
+            "url": "https://shahrfarsh.com/Account/Login",
+            "payload": {
+                "phoneNumber": "0%s"
+            },
+            "data": null
+        },
+        {
+            "name": "beheshticarpet",
+            "method": "POST",
+            "url": "https://takfarsh.com/wp-content/themes/bakala/template-parts/send.php",
+            "payload": {
+                "phone_email": "0%s"
+            },
+            "data": null
+        },
+        {
+            "name": "khanomi",
+            "method": "POST",
+            "url": "https://www.khanoumi.com/accounts/sendotp",
+            "payload": {
+                "mobile": "0%s"
+            },
+            "data": null
+        },
+        {
+            "name": "rojashop",
+            "method": "POST",
+            "url": "https://rojashop.com/api/auth/sendOtp",
+            "payload": {
+                "mobile": "0%s"
+            },
+            "data": null
+        },
+        {
+            "name": "dadpardaz",
+            "method": "POST",
+            "url": "https://dadpardaz.com/advice/getLoginConfirmationCode",
+            "payload": {
+                "mobile": "0%s"
+            },
+            "data": null
+        },
+        {
+            "name": "rokla",
+            "method": "POST",
+            "url": "https://api.rokla.ir/api/request/otp",
+            "payload": {
+                "mobile": "0%s"
+            },
+            "data": null
+        },
+        {
+            "name": "khodro45",
+            "method": "POST",
+            "url": "https://khodro45.com/api/v1/customers/otp/",
+            "payload": {
+                "mobile": "0%s"
+            },
+            "data": null
+        },
+        {
+            "name": "pezeshket",
+            "method": "POST",
+            "url": "https://api.pezeshket.com/core/v1/auth/requestCode",
+            "payload": {
+                "mobileNumber": "0%s"
+            },
+            "data": null
+        },
+        {
+            "name": "virgool",
+            "method": "POST",
+            "url": "https://virgool.io/api/v1.4/auth/verify",
+            "payload": {
+                "method": "phone",
+                "identifier": "0%s"
+            },
+            "data": null
+        },
+        {
+            "name": "timcheh",
+            "method": "POST",
+            "url": "https://api.timcheh.com/auth/otp/send",
+            "payload": {
+                "mobile": "0%s"
+            },
+            "data": null
+        },
+        {
+            "name": "paklean",
+            "method": "POST",
+            "url": "https://client.api.paklean.com/user/resendCode",
+            "payload": {
+                "username": "0%s"
+            },
+            "data": null
+        },
+        {
+            "name": "daal",
+            "method": "POST",
+            "url": "https://daal.co/api/authentication/login-register/method/phone-otp/user-role/customer/verify-request",
+            "payload": {
+                "phone": "0%s"
+            },
+            "data": null
+        },
+        {
+            "name": "bimebazar",
+            "method": "POST",
+            "url": "https://bimebazar.com/accounts/api/login_sec/",
+            "payload": {
+                "username": "0%s"
+            },
+            "data": null
+        },
+        {
+            "name": "azki",
+            "method": "POST",
+            "url": "https://www.azki.co/api/vehicleorder/v2/app/auth/check-login-availability/",
+            "payload": {
+                "phoneNumber": "0%s"
+            },
+            "data": null
+        },
+        {
+            "name": "safarmarket",
+            "method": "POST",
+            "url": "https://safarmarket.com//api/security/v2/user/otp",
+            "payload": {
+                "phone": "0%s"
+            },
+            "data": null
+        },
+        {
+            "name": "shad",
+            "method": "POST",
+            "url": "https://shadmessenger12.iranlms.ir/",
+            "payload": {
+                "api_version": "3",
+                "method": "sendCode",
+                "data": {
+                    "phone_number": "098%s",
+                    "send_type": "SMS"
+                }
+            },
+            "data": null
+        },
+        {
+            "name": "emtiaz",
+            "method": "POST",
+            "url": "https://web.emtiyaz.app/json/login",
+            "data": "send=1&cellphone=0%s",
+            "payload": null
+        },
+        {
+            "name": "azinja",
+            "method": "POST",
+            "url": "https://arzinja.app/api/login",
+            "data": "------WebKitFormBoundarycIO8Y5lNAbbiVXKS\r\nContent-Disposition: form-data; name=\"mobile\"\r\n\r\n0%s\r\n------WebKitFormBoundarycIO8Y5lNAbbiVXKS--\r\n",
+            "payload": null
+        },
+        {
+            "name": "rubika",
+            "method": "POST",
+            "url": "https://messengerg2c4.iranlms.ir/",
+            "payload": {
+                "api_version": "3",
+                "method": "sendCode",
+                "data": {
+                    "phone_number": "%s",
+                    "send_type": "SMS"
+                }
+            },
+            "data": null
+        },
+        {
+            "name": "bama",
+            "method": "POST",
+            "url": "https://bama.ir/signin-checkforcellnumber",
+            "data": "cellNumber=0%s",
+            "payload": null
+        },
+        {
+            "name": "digify",
+            "method": "POST",
+            "url": "https://apollo.digify.shop/graphql",
+            "payload": {
+                "operationName": "Mutation",
+                "variables": {
+                    "content": {
+                        "phone_number": "0%s"
+                    }
+                },
+                "query": "mutation Mutation($content: MerchantRegisterOTPSendContent) {\n  merchantRegister {\n    otpSend(content: $content)\n    __typename\n  }\n}"
+            },
+            "data": null
+        },
+        {
+            "name": "snappmarket",
+            "method": "POST",
+            "url": "https://api.snapp.market/mart/v1/user/loginMobileWithNoPass?cellphone=0%s",
+            "payload": null,
+            "data": null
+        },
+        {
+            "name": "chartex",
+            "method": "POST",
+            "url": "https://api.chartex.net/api/v2/user/validate",
+            "payload": {
+                "mobile": "0%s",
+                "country_code": "IR",
+                "provider_code": "RUBIKA"
+            },
+            "data": null
+        },
+        {
+            "name": "snapptrip",
+            "method": "POST",
+            "url": "https://www.snapptrip.com/register",
+            "payload": {
+                "lang": "fa",
+                "country_id": "860",
+                "password": "snaptrippass",
+                "mobile_phone": "0%s",
+                "country_code": "+98",
+                "email": "example@gmail.com"
+            },
+            "data": null
+        },
+        {
+            "name": "okcs",
+            "method": "GET",
+            "url": "https://okcs.com/users/mobilelogin?mobile=0%s",
+            "payload": null,
+            "data": null
+        },
+        {
+            "name": "takshopaccessorise",
+            "method": "POST",
+            "url": "https://takshopaccessorise.ir/api/v1/sessions/login_request",
+            "payload": {
+                "mobile_phone": "0%s"
+            },
+            "data": null
+        },
+        {
+            "name": "bitpin",
+            "method": "POST",
+            "url": "https://api.bitpin.ir/v1/usr/sub_phone/",
+            "payload": {
+                "phone": "0%s",
+                "captcha_token": ""
+            },
+            "data": null
+        },
+        {
+            "name": "publisha",
+            "method": "POST",
+            "url": "https://www.pubisha.com/login/checkCustomerActivation",
+            "data": "mobile=0%s",
+            "payload": null
+        },
+        {
+            "name": "snappdoctor",
+            "method": "GET",
+            "url": "https://core.snapp.doctor/Api/Common/v1/sendVerificationCode/%s/sms?cCode=+98",
+            "payload": null,
+            "timeout": 5,
+            "data": null
+        },
+        {
+            "name": "tagmond",
+            "method": "POST",
+            "url": "https://tagmond.com/phone_number",
+            "data": "utf8=%E2%9C%93&phone_number=0%s&g-recaptcha-response=",
+            "payload": null
+        },
+        {
+            "name": "doctoreto",
+            "method": "POST",
+            "url": "https://api.doctoreto.com/api/web/patient/v1/accounts/register",
+            "payload": {
+                "mobile": "0%s",
+                "country_id": 205
+            },
+            "data": null
+        },
+        {
+            "name": "olgoo",
+            "method": "POST",
+            "url": "https://www.olgoobooks.ir/sn/userRegistration/?&requestedByAjax=1&elementsId=userRegisterationBox",
+            "payload": {
+                "contactInfo[mobile]": "0%s",
+                "contactInfo[agreementAccepted]": "1",
+                "contactInfo[teachingFieldId]": "1",
+                "contactInfo[eduGradeIds][7]": "7",
+                "submit_register": "1"
+            },
+            "data": null
+        },
+        {
+            "name": "pakhsh",
+            "method": "POST",
+            "url": "https://www.pakhsh.shop/wp-admin/admin-ajax.php",
+            "data": "action=digits_check_mob&countrycode=%2B98&mobileNo=0%s&csrf=fdaa7fc8e6&login=2&username=&email=&captcha=&captcha_ses=&json=1&whatsapp=0",
+            "payload": null
+        },
+        {
+            "name": "didnegar",
+            "method": "POST",
+            "url": "https://www.didnegar.com/wp-admin/admin-ajax.php",
+            "data": "action=digits_check_mob&countrycode=%2B98&mobileNo=%s&csrf=4c9ac22ff4&login=1&username=&email=&captcha=&captcha_ses=&digits=1&json=1&whatsapp=0&mobmail=0%s&dig_otp=&digits_login_remember_me=1&dig_nounce=4c9ac22ff4",
+            "payload": null
+        },
+        {
+            "name": "see5",
+            "method": "POST",
+            "url": "https://crm.see5.net/api_ajax/sendotp.php",
+            "payload": {
+                "mobile": "0%s",
+                "action": "sendsms"
+            },
+            "data": null
+        },
+        {
+            "name": "ghabzino",
+            "method": "POST",
+            "url": "https://application2.billingsystem.ayantech.ir/WebServices/Core.svc/requestActivationCode",
+            "payload": {
+                "Parameters": {
+                    "ApplicationType": "Web",
+                    "ApplicationUniqueToken": null,
+                    "ApplicationVersion": "1.0.0",
+                    "MobileNumber": "0%s"
+                }
+            },
+            "data": null
+        },
+        {
+            "name": "simkhan",
+            "method": "POST",
+            "url": "https://www.simkhanapi.ir/api/users/registerV2",
+            "payload": {
+                "mobileNumber": "0%s",
+                "ReSendSMS": false
+            },
+            "data": null
+        },
+        {
+            "name": "drsaina",
+            "method": "POST",
+            "url": "https://www.drsaina.com/RegisterLogin?ReturnUrl=%2Fconsultation",
+            "data": "__RequestVerificationToken=CfDJ8NPBKm5eTodHlBQhmwjQAVUgCtuEzkxhMWwcm9NyjTpueNnMgHEElSj7_JXmfrsstx9eCNrsZ5wiuLox0OSfoEvDvJtGb7NC5z6Hz7vMEL4sBlF37_OryYWJ0CCm4gpjmJN4BxSjZ24pukCJF2AQiWg&noLayout=False&action=checkIfUserExistOrNot&lId=&codeGuid=00000000-0000-0000-0000-000000000000&PhoneNumber=0%s&confirmCode=&fullName=&Password=&Password2=",
+            "payload": null
+        },
+        {
+            "name": "limome",
+            "method": "POST",
+            "url": "https://my.limoome.com/api/auth/login/otp",
+            "payload": {
+                "mobileNumber": "%s",
+                "country": "1"
+            },
+            "data": null
+        },
+        {
+            "name": "devsloop",
+            "method": "POST",
+            "url": "https://i.devslop.app/app/ifollow/api/otp.php",
+            "data": "number=0%s&state=number&",
+            "payload": null
+        },
+        {
+            "name": "hiword",
+            "method": "POST",
+            "url": "https://hiword.ir/wp-json/otp-login/v1/login",
+            "payload": {
+                "identifier": "0%s"
+            },
+            "data": null
+        },
+        {
+            "name": "behzadshami",
+            "method": "POST",
+            "url": "https://behzadshami.com/wp-admin/admin-ajax.php",
+            "data": "action=digits_check_mob&countrycode=%2B98&mobileNo=%s&csrf=3b4194a8bb&login=2&username=&email=&captcha=&captcha_ses=&digits=1&json=1&whatsapp=0&digits_reg_%D9%81%DB%8C%D9%84%D8%AF%D9%85%D8%AA%D9%86%DB%8C1642498931181=Nvgu&digregcode=%2B98&digits_reg_mail=%s&dig_otp=&code=&dig_reg_mail=&dig_nounce=3b4194a8bb",
+            "payload": null
+        },
+        {
+            "name": "ghasedak24",
+            "method": "POST",
+            "url": "https://ghasedak24.com/user/ajax_register",
+            "payload": {
+                "username": "0%s"
+            },
+            "data": null
+        },
+        {
+            "name": "iranketab",
+            "method": "POST",
+            "url": "https://www.iranketab.ir/account/register",
+            "payload": {
+                "UserName": "0%s"
+            },
+            "data": null
+        },
+        {
+            "name": "ketabchi",
+            "method": "POST",
+            "url": "https://ketabchi.com/api/v1/auth/requestVerificationCode",
+            "payload": {
+                "phoneNumber": "0%s"
+            },
+            "data": null
+        },
+        {
+            "name": "takfarsh",
+            "method": "POST",
+            "url": "https://takfarsh.com/wp-content/themes/bakala/template-parts/send.php",
+            "payload": {
+                "phone_email": "0%s"
+            },
+            "data": null
+        },
+        {
+            "name": "dadpardaz",
+            "method": "POST",
+            "url": "https://dadpardaz.com/advice/getLoginConfirmationCode",
+            "payload": {
+                "mobile": "0%s"
+            },
+            "data": null
+        },
+        {
+            "name": "iranicard",
+            "method": "POST",
+            "url": "https://api.iranicard.ir/api/v1/register",
+            "payload": {
+                "mobile": "0%s"
+            },
+            "data": null
+        },
+        {
+            "name": "pubgsell",
+            "method": "POST",
+            "url": "https://pubg-sell.ir/loginuser?username=0%s",
+            "payload": null,
+            "data": null
+        },
+        {
+            "name": "tj8",
+            "method": "POST",
+            "url": "https://tj8.ir/auth/register",
+            "payload": {
+                "mobile": "0%s"
+            },
+            "data": null
+        },
+        {
+            "name": "mashinbank",
+            "method": "POST",
+            "url": "https://mashinbank.com/api2/users/check",
+            "payload": {
+                "mobileNumber": "0%s"
+            },
+            "data": null
+        },
+        {
+            "name": "cinematicket",
+            "method": "POST",
+            "url": "https://cinematicket.org/api/v1/users/signup",
+            "payload": {
+                "phone_number": "0%s"
+            },
+            "data": null
+        },
+        {
+            "name": "kafegheymat",
+            "method": "POST",
+            "url": "https://kafegheymat.com/shop/getLoginSms",
+            "payload": {
+                "phone": "0%s"
+            },
+            "data": null
+        },
+        {
+            "name": "snappexpress",
+            "method": "POST",
+            "url": "https://api.snapp.express/mobile/v4/user/loginMobileWithNoPass?client=PWA&optionalClient=PWA&deviceType=PWA&appVersion=5.6.6&optionalVersion=5.6.6&UDID=bb65d956-f88b-4fec-9911-5f94391edf85",
+            "payload": {
+                "cellphone": "0%s"
+            },
+            "data": null
+        },
+        {
+            "name": "opco",
+            "method": "POST",
+            "url": "https://shop.opco.co.ir/index.php?route=extension/module/login_verify/update_register_code",
+            "payload": {
+                "telephone": "0%s"
+            },
+            "data": null
+        },
+        {
+            "name": "melix",
+            "method": "POST",
+            "url": "https://melix.shop/site/api/v1/user/otp",
+            "payload": {
+                "mobile": "0%s"
+            },
+            "data": null
+        },
+        {
+            "name": "safiran",
+            "method": "POST",
+            "url": "https://safiran.shop/login",
+            "payload": {
+                "mobile": "0%s"
+            },
+            "data": null
+        },
+        {
+            "name": "pirankalaco",
+            "method": "POST",
+            "url": "https://pirankalaco.ir/shop/SendPhone.php",
+            "data": "phone=0%s",
+            "payload": null
+        },
+        {
+            "name": "tnovin",
+            "method": "POST",
+            "url": "http://shop.tnovin.com/login",
+            "data": "phone=0%s",
+            "payload": null
+        },
+        {
+            "name": "dastakht",
+            "method": "POST",
+            "url": "https://dastkhat-isad.ir/api/v1/user/store",
+            "payload": {
+                "mobile": "%s",
+                "countryCode": 98,
+                "device_os": 2
+            },
+            "data": null
+        },
+        {
+            "name": "hamlex",
+            "method": "POST",
+            "url": "https://hamlex.ir/register.php",
+            "data": "fullname=%D9%85%D9%85%D8%AF&phoneNumber=0%s&register=",
+            "payload": null
+        },
+        {
+            "name": "irwco",
+            "method": "POST",
+            "url": "https://irwco.ir/register",
+            "data": "mobile=0%s",
+            "payload": null
+        },
+        {
+            "name": "moshaveran724",
+            "method": "POST",
+            "url": "https://moshaveran724.ir/m/pms.php",
+            "data": "againkey=0%s&cache=false",
+            "payload": null
+        },
+        {
+            "name": "sibbank",
+            "method": "POST",
+            "url": "https://api.sibbank.ir/v1/auth/login",
+            "payload": {
+                "phone_number": "0%s"
+            },
+            "data": null
+        },
+        {
+            "name": "steelalborz",
+            "method": "POST",
+            "url": "https://steelalborz.com/wp-admin/admin-ajax.php",
+            "data": "action=digits_check_mob&countrycode=%2B98&mobileNo=0%s&csrf=2aae5b41f1&login=2&username=&email=&captcha=&captcha_ses=&digits=1&json=1&whatsapp=0&digregcode=%2B98&digits_reg_mail=0%s&dig_otp=&code=&dig_reg_mail=&dig_nounce=2aae5b41f1",
+            "payload": null
+        },
+        {
+            "name": "arshian",
+            "method": "POST",
+            "url": "https://api.arshiyan.com/send_code",
+            "payload": {
+                "country_code": "98",
+                "phone_number": "%s"
+            },
+            "data": null
+        },
+        {
+            "name": "topnoor",
+            "method": "POST",
+            "url": "https://backend.topnoor.ir/web/v1/user/otp",
+            "payload": {
+                "mobile": "0%s"
+            },
+            "data": null
+        },
+        {
+            "name": "alinance",
+            "method": "POST",
+            "url": "https://api.alinance.com/user/register/mobile/send/",
+            "payload": {
+                "phone_number": "0%s"
+            },
+            "data": null
+        },
+        {
+            "name": "alopeyk",
+            "method": "POST",
+            "url": "https://api.alopeyk.com/api/v2/login?platform=pwa",
+            "payload": {
+                "type": "CUSTOMER",
+                "model": "Chrome 104.0.0.0",
+                "platform": "pwa",
+                "version": "10",
+                "manufacturer": "Windows",
+                "isVirtual": false,
+                "serial": true,
+                "app_version": "1.2.6",
+                "uuid": true,
+                "phone": "0%s"
+            },
+            "data": null
+        },
+        {
+            "name": "alopeyksafir",
+            "method": "POST",
+            "url": "https://api.alopeyk.com/safir-service/api/v1/login",
+            "payload": {
+                "phone": "0%s"
+            },
+            "data": null
+        },
+        {
+            "name": "chaymarket",
+            "method": "POST",
+            "url": "https://www.chaymarket.com/wp-admin/admin-ajax.php",
+            "data": "action=digits_check_mob&countrycode=%2B98&mobileNo=0%s&csrf=c832b38a97&login=2&username=&email=&captcha=&captcha_ses=&json=1&whatsapp=0",
+            "payload": null
+        },
+        {
+            "name": "coffefastfoodluxury",
+            "method": "POST",
+            "url": "https://coffefastfoodluxury.ir/wp-admin/admin-ajax.php",
+            "data": "action=digits_check_mob&countrycode=%2B98&mobileNo=0%s&csrf=e23c15918c&login=2&username=&email=&captcha=&captcha_ses=&digits=1&json=1&whatsapp=0&digregcode=%2B98&digits_reg_mail=0%s&dig_otp=&code=&dig_reg_mail=&dig_nounce=e23c15918c",
+            "payload": null
+        },
+        {
+            "name": "dosma",
+            "method": "POST",
+            "url": "https://app.dosma.ir/sendverify/",
+            "payload": {
+                "username": "0%s"
+            },
+            "data": null
+        },
+        {
+            "name": "ehteraman",
+            "method": "POST",
+            "url": "https://api.ehteraman.com/api/request/otp",
+            "payload": {
+                "mobile": "0%s"
+            },
+            "data": null
+        },
+        {
+            "name": "mcishop",
+            "method": "POST",
+            "url": "https://api-ebcom.mci.ir/services/auth/v1.0/otp",
+            "payload": {
+                "msisdn": "%s"
+            },
+            "data": null
+        },
+        {
+            "name": "hamrahbours",
+            "method": "POST",
+            "url": "https://api.hbbs.ir/authentication/SendCode",
+            "payload": {
+                "MobileNumber": "0%s"
+            },
+            "data": null
+        },
+        {
+            "name": "homtick",
+            "method": "POST",
+            "url": "https://auth.homtick.com/api/V1/User/GetVerifyCode",
+            "payload": {
+                "mobileOrEmail": "0%s",
+                "deviceCode": "d520c7a8-421b-4563-b955-f5abc56b97ec",
+                "firstName": "",
+                "lastName": "",
+                "password": ""
+            },
+            "data": null
+        },
+        {
+            "name": "iranamlaak",
+            "method": "POST",
+            "url": "https://api.iranamlaak.net/authenticate/send/otp/to/mobile/via/sms",
+            "payload": {
+                "AgencyMobile": "0%s"
+            },
+            "data": null
+        },
+        {
+            "name": "karchidari",
+            "method": "POST",
+            "url": "https://api.kcd.app/api/v1/auth/login",
+            "payload": {
+                "mobile": "0%s"
+            },
+            "data": null
+        },
+        {
+            "name": "mazoo",
+            "method": "POST",
+            "url": "https://mazoocandle.ir/login",
+            "payload": {
+                "phone": "%s"
+            },
+            "data": null
+        },
+        {
+            "name": "paymishe",
+            "method": "POST",
+            "url": "https://api.paymishe.com/api/v1/otp/registerOrLogin",
+            "payload": {
+                "mobile": "0%s"
+            },
+            "data": null
+        },
+        {
+            "name": "podro",
+            "method": "POST",
+            "url": "https://api.paymishe.com/api/v1/otp/registerOrLogin",
+            "payload": {
+                "mobile": "0%s"
+            },
+            "data": null
+        },
+        {
+            "name": "rayshomar",
+            "method": "POST",
+            "url": "https://api.rayshomar.ir/api/Register/RegistrMobile",
+            "data": "MobileNumber=0%s",
+            "payload": null
+        },
+        {
+            "name": "amoomilad",
+            "method": "POST",
+            "url": "https://amoomilad.demo-hoonammaharat.ir/api/v1.0/Account/Sendcode",
+            "payload": {
+                "Token": "5c486f96df46520d1e4d4a998515b1de02392c9b903a7734ec2798ec55be6e5c",
+                "DeviceId": 1,
+                "PhoneNumber": "0%s",
+                "Helper": 77942
+            },
+            "data": null
+        },
+        {
+            "name": "ashrafi",
+            "method": "POST",
+            "url": "https://ashraafi.com/wp-admin/admin-ajax.php",
+            "data": "action=digits_check_mob&countrycode=%2B98&mobileNo=%s&csrf=54dfdabe34&login=1&username=&email=&captcha=&captcha_ses=&digits=1&json=1&whatsapp=0&mobmail=%s&dig_otp=&dig_nounce=54dfdabe34",
+            "payload": null
+        },
+        {
+            "name": "bandarazad",
+            "method": "POST",
+            "url": "https://bandarazad.com/wp-admin/admin-ajax.php",
+            "data": "action=digits_check_mob&countrycode=%2B98&mobileNo=0%s&csrf=ec10ccb02a&login=2&username=&email=&captcha=&captcha_ses=&digits=1&json=1&whatsapp=0&digregcode=%2B98&digits_reg_mail=0%s&digits_reg_password=fuckYOU&dig_otp=&code=&dig_reg_mail=&dig_nounce=ec10ccb02a",
+            "payload": null
+        },
+        {
+            "name": "bazidone",
+            "method": "POST",
+            "url": "https://bazidone.com/wp-admin/admin-ajax.php",
+            "data": "action=digits_check_mob&countrycode=%2B98&mobileNo=%s&csrf=c0f5d0dcf2&login=1&username=&email=&captcha=&captcha_ses=&digits=1&json=1&whatsapp=0&mobmail=0%s&dig_otp=&digits_login_remember_me=1&dig_nounce=c0f5d0dcf2",
+            "payload": null
+        },
+        {
+            "name": "bigtoys",
+            "method": "POST",
+            "url": "https://www.bigtoys.ir/wp-admin/admin-ajax.php",
+            "data": "action=digits_check_mob&countrycode=%2B98&mobileNo=0%s&csrf=94cf3ad9a4&login=2&username=&email=&captcha=&captcha_ses=&digits=1&json=1&whatsapp=0&digits_reg_name=%D8%A8%DB%8C%D8%A8%D9%84%DB%8C%D9%84&digregcode=%2B98&digits_reg_mail=0%s&digregscode2=%2B98&mobmail2=&digits_reg_password=&dig_otp=&code=&dig_reg_mail=&dig_nounce=94cf3ad9a4",
+            "payload": null
+        },
+        {
+            "name": "bitex24",
+            "method": "GET",
+            "url": "https://bitex24.com/api/v1/auth/sendSms?mobile=0%s&dial_code=0",
+            "payload": null,
+            "data": null
+        },
+        {
+            "name": "candoosms",
+            "method": "POST",
+            "url": "https://www.candoosms.com/wp-admin/admin-ajax.php",
+            "data": "action=send_sms&phone=0%s",
+            "payload": null
+        },
+        {
+            "name": "farsgraphic",
+            "method": "POST",
+            "url": "https://farsgraphic.com/wp-admin/admin-ajax.php",
+            "data": "action=digits_check_mob&countrycode=%2B98&mobileNo=%s&csrf=79a35b4aa3&login=2&username=&email=&captcha=&captcha_ses=&digits=1&json=1&whatsapp=0&digits_reg_name=%D9%86%DB%8C%D9%85%D9%86%D9%85%D9%85%D9%86%DB%8C%D8%B3&digits_reg_lastname=%D9%85%D9%86%D8%B3%DB%8C%D8%B2%D8%AA%D9%86&digregscode2=%2B98&mobmail2=&digregcode=%2B98&digits_reg_mail=%s&dig_otp=&code=&dig_reg_mail=&dig_nounce=79a35b4aa3",
+            "payload": null
+        },
+        {
+            "name": "glite",
+            "method": "POST",
+            "url": "https://www.glite.ir/wp-admin/admin-ajax.php",
+            "data": "action=logini_first&login=0%s",
+            "payload": null
+        },
+        {
+            "name": "hemat",
+            "method": "POST",
+            "url": "https://shop.hemat-elec.ir/wp-admin/admin-ajax.php",
+            "data": "action=digits_check_mob&countrycode=%2B98&mobileNo=0%s&csrf=d33076d828&login=2&username=&email=&captcha=&captcha_ses=&digits=1&json=1&whatsapp=0&digregscode2=%2B98&mobmail2=&digregcode=%2B98&digits_reg_mail=0%s&digits_reg_password=mahyar125&dig_otp=&code=&dig_reg_mail=&dig_nounce=d33076d828",
+            "payload": null
+        },
+        {
+            "name": "kodakamoz",
+            "method": "POST",
+            "url": "https://www.kodakamoz.com/wp-admin/admin-ajax.php",
+            "data": "action=digits_check_mob&countrycode=%2B98&mobileNo=0%s&csrf=18551366bc&login=2&username=&email=&captcha=&captcha_ses=&digits=1&json=1&whatsapp=0&digits_reg_lastname=%D9%84%D8%A8%D8%A8%DB%8C%DB%8C%D8%A8%D8%AB%D9%82%D8%AD&digits_reg_displayname=%D8%A8%D8%A8%D8%A8%DB%8C%D8%B1%D8%A8%D9%84%D9%84%DB%8C%D8%A8%D9%84&digregscode2=%2B98&mobmail2=&digregcode=%2B98&digits_reg_mail=0%s&digits_reg_password=&digits_reg_avansbirthdate=2003-03-21&jalali_digits_reg_avansbirthdate1867119037=1382-01-01&dig_otp=&code=&dig_reg_mail=&dig_nounce=18551366bc",
+            "payload": null
+        },
+        {
+            "name": "mipersia",
+            "method": "POST",
+            "url": "https://www.mipersia.com/wp-admin/admin-ajax.php",
+            "data": "action=digits_check_mob&countrycode=%2B98&mobileNo=0%s&csrf=2d39af0a72&login=2&username=&email=&captcha=&captcha_ses=&digits=1&json=1&whatsapp=0&digregcode=%2B98&digits_reg_mail=0%s&digregscode2=%2B98&mobmail2=&dig_otp=&code=&dig_reg_mail=&dig_nounce=2d39af0a72",
+            "payload": null
+        },
+        {
+            "name": "novibook",
+            "method": "POST",
+            "url": "https://novinbook.com/index.php?route=account/phone",
+            "data": "phone=0%s",
+            "payload": null
+        },
+        {
+            "name": "offch",
+            "method": "POST",
+            "url": "https://api.offch.com/auth/otp",
+            "payload": {
+                "username": "0%s"
+            },
+            "data": null
+        },
+        {
+            "name": "sabziman",
+            "method": "POST",
+            "url": "https://sabziman.com/wp-admin/admin-ajax.php?action=newphoneexist&phonenumber=0%s",
+            "data": null,
+            "payload": null
+        },
+        {
+            "name": "tajtehran",
+            "method": "POST",
+            "url": "https://tajtehran.com/RegisterRequest",
+            "data": "mobile=0%s&password=mamad1234",
+            "payload": null
+        },
+        {
+            "name": "mrbilitcall",
+            "method": "GET",
+            "url": "https://auth.mrbilit.com/api/Token/send/byCall?mobile=0%s",
+            "payload": null,
+            "data": null
+        },
+        {
+            "name": "tezolmarket",
+            "method": "GET",
+            "url": "https://api.codebazan.ir/adad/?text=%s",
+            "payload": null,
+            "data": null
+        },
+        {
+            "name": "gap",
+            "method": "GET",
+            "url": "https://core.gap.im/v1/user/resendCode.json?mobile=%2B98%s&type=IVR",
+            "payload": null,
+            "data": null
+        },
+        {
+            "name": "novinbook_call",
+            "method": "POST",
+            "url": "https://novinbook.com/index.php?route=account/phone",
+            "data": "phone=0%s&call=yes",
+            "payload": null
+        },
+        {
+            "name": "azki",
+            "method": "GET",
+            "url": "https://www.azki.com/api/vehicleorder/api/customer/register/login-with-vocal-verification-code?phoneNumber=0%s",
+            "payload": null,
+            "data": null
+        },
+        {
+            "name": "trip",
+            "method": "POST",
+            "url": "https://gateway.trip.ir/api/registers",
+            "payload": {
+                "CellPhone": "0%s"
+            },
+            "data": null
+        },
+        {
+            "name": "trip_totp",
+            "method": "POST",
+            "url": "https://gateway.trip.ir/api/Totp",
+            "payload": {
+                "PhoneNumber": "0%s"
+            },
+            "data": null
+        },
+        {
+            "name": "paklean",
+            "method": "POST",
+            "url": "https://client.api.paklean.com/user/resendVoiceCode",
+            "payload": {
+                "username": "0%s"
+            },
+            "data": null
+        },
+        {
+            "name": "ragham",
+            "method": "POST",
+            "url": "https://web.raghamapp.com/api/users/code",
+            "payload": {
+                "phone": "+98%s"
+            },
+            "data": null
+        }
+    ]
+}
