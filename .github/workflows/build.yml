@@ -35,9 +35,8 @@ jobs:
 
       - name: Run Go tests
         run: |
-          export GOARCH=${{ matrix.arch }}
-          go mod tidy
-          go test ./... -v  # Run tests before building
+          GOARCH=${{ matrix.arch }} go mod tidy
+          GOARCH=${{ matrix.arch }} go test ./... -v 
         continue-on-error: false  # Make sure the job fails if tests fail
     
   build:
@@ -69,15 +68,9 @@ jobs:
 
       - name: Build binary for ${{ matrix.arch }}
         run: |
-          if [ ${{ runner.os }} != 'Windows' ]; then
-            export GOARCH=${{ matrix.arch }}
-            go mod tidy
-            go build -v -buildmode=c-archive -o ${{ env.name }}-${{ matrix.os }}-${{ matrix.arch }}.a .
-          else
-            set GOARCH=${{ matrix.arch }}
-            go mod tidy
-            go build -v -buildmode=c-archive -o ${{ env.name }}-${{ matrix.os }}-${{ matrix.arch }}.a .
-          fi
+          GOARCH=${{ matrix.arch }} go mod tidy
+          GOARCH=${{ matrix.arch }} go build -v -buildmode=c-archive -o ${{ env.name }}-${{ matrix.os }}-${{ matrix.arch }}.a .
+
 
       - name: Move binaries to dist (Linux/macOS)
         run: |
