@@ -12,6 +12,7 @@ module.exports = {
   ],
   plugins: [
     [
+      "./.github/calver-plugin",
       "@semantic-release/commit-analyzer",
       {
         preset: "conventionalcommits",
@@ -108,6 +109,5 @@ module.exports = {
         message: "chore(release): ${nextRelease.version}\n\n${nextRelease.notes}",
       },
     ],
-    "./.github/calver-plugin"
   ],
 };
