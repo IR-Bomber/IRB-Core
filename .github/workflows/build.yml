@@ -39,6 +39,7 @@ jobs:
         continue-on-error: false  # Make sure the job fails if tests fail
     
   build:
+    needs: test
     name: Build Go binaries
     runs-on: ${{ matrix.os }}
 
