@@ -35,7 +35,7 @@ jobs:
 
       - name: Set up Docker
         uses: docker/setup-docker-action@v4
-        if: runner.os != 'Windows'
+        if: runner.os == 'Linux'
 
       - name: Run Go tests (Linux) inside Docker
         run: |
