@@ -16,7 +16,7 @@ func ValidateStatus(status int) bool {
 }
 
 const (
-	APIURL = "https://raw.githubusercontent.com/M-logique/Iran-Bomber-Core/refs/heads/main/API.json"
+	APIURL = "https://raw.githubusercontent.com/M-logique/Iran-Bomber-Core/refs/heads/main/data/API.json"
 )
 
 // FormatJSON formats the given data by replacing "$num" in strings with provided arguments
