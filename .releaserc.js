@@ -1,5 +1,4 @@
 const fs = require("fs");
-const { version } = require("os");
 const path = require("path");
 
 const templatePath = path.join(__dirname, ".github", "release-template.md");
@@ -109,13 +108,6 @@ module.exports = {
         assets: ["CHANGELOG.md"],
         message: "chore(release): ${nextRelease.version}\n\n${nextRelease.notes}",
       },
-    ],
-    [
-      "@mrbernnz/semantic-release-calver",
-      {
-        version: "minor",
-        preRelease: false
-      }
     ]
   ],
 };
